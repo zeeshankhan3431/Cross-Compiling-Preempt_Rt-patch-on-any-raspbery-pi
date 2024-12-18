@@ -28,10 +28,16 @@ Clone this repository and run** make [platform]** where platform is either:
 
     64 bits: Pi5, Pi4, PiCM4, Pi400, Pi3, PiCM3, PiZero2
     32 bits: Pi1, PiZero, PiCM1, Pi2, Pi3-32, PiCM3-32, PiZero2-32, Pi4-32, Pi400-32, PiCM4-32
+    
 For example i'm making it for Pi3-32
-make Pi3-32    (Note: for pi3 64 bit, it gives errors on boot) it will create image file
+
+make Pi3-32    
+
+(Note: for pi3 64 bit, it gives errors on boot) it will create image file
+
 locate that image file and open that directory in terminal 
 now after that connect your sd card to your system 
+
 
 sudo dd if=r of=/dev/sda status=progress   it will burn image file r on sd card where “r” is the image file name  or you can use pi imager to directly write zip image file to your sdcard
 
